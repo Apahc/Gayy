@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>You</title>
+        <link rel="stylesheet" href="you.css">
+      </head>
+      <body>
+        <p align="center" style="font-size:80px" >Are you gay?</p>
+        <div id="buttons">
+          <input type = "button" class="button-No" id="NeverClick" value="No">
+          <button type = "button" class="button" onclick="disp(document.getElementById('form1'))">Yes</button>
+        </div>
+        <form id="form1" style="display: none;">
+          <p align="center" style="font-size:30px" >Good Boy</p>
+          <img src="tors.jpg" height="70%" width="70%">
+      </form>
+        <script> 
+         function disp(form) {
+        if (form.style.display == "none") {
+            form.style.display = "block";
+        } else {
+            form.style.display = "none";
+        }
+    }
+          var element = document.getElementById('NeverClick'); 
+          
+          document.onmousemove = function(e) { 
+              var x = e.clientX; 
+              var y = e.clientY; 
+              var rect = element.getBoundingClientRect();
+              var x_el = rect.left;
+              var y_el = rect.top;
+              
+              if (x > x_el - 10 && x < x_el + rect.width + 10 && y > y_el - 10 && y < y_el + rect.height + 10) { 
+                  var newX = Math.random() * 10;
+                  var newY = Math.random() * 10;
+                  var windowWidth = window.innerWidth; 
+                  var windowHeight = window.innerHeight; 
+                  
+                  element.style.transform = 'translate(' + newX * 40 + 'px, ' + newY * 40 + 'px)';
+              } 
+          } 
+          </script>
+          
+      </body>
+</html>

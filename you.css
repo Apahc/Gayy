@@ -1,0 +1,47 @@
+#buttons{
+    width: 100%;
+    text-align: center;
+}
+.button{
+    display: inline-block;
+    width: 15%;
+}
+
+.button{
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(43, 100, 135);
+    width:90px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-left: 50px;
+}
+.button-No{
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(43, 100, 135);
+   width:90px;
+   height: 40px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    width: 150px;
+    height: 100px;
+    font-size: large;
+    color: aliceblue;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    transition: 0.7s;
+}
+#form1 {
+    margin-left: 40%;
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(43, 100, 135);
+}
